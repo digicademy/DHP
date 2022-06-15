@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DHP</title>
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+        <!-- styles for included libraries -->
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+        <!-- hint styles -->
+        <link href="resources/css/hint.css" rel="stylesheet" />
+        <!-- js needed in head -->
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js"></script>
+    </head>
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h5><strong>2022-06-16|17</strong> Digital Humanities Projects –Approaches and
+                    Experiences </h5>
+                <h5>
+                    <strong>Workshop </strong>
+                </h5>
+                <h2 class="red down-100">Linked data</h2>
+                <h3 class=" down-25">Persons, Places, Events, Topics.<br />Experiences from epidat
+                    and Buber Korrespondenzen Digital</h3>
+                <h5 class="down-25"
+                    ><!--<a href="https://github.com/kollatzthomas/EAJS-DF-03" target="_blank"
+                        >git</a>                     <br />--> slides <a
+                        href="https://kollatzthomas.github.io/DHP"
+                        title="View the presentation online"
+                    >https://kollatzthomas.github.io/DHP</a><br /></h5>
+                <h6>How to use this presentation</h6>
+                <h6 style="color:gray" class="up-25">use <kbd>spacebar</kbd> or <kbd>←</kbd> arrow
+                    keys <kbd>→</kbd> to navigate between the slides</h6>
+                <h6 style="color:gray" class="up-25">use <kbd> mouse 🖱</kbd> to open a <a href=""
+                        title="hyperlinks are blue-colored">link</a></h6>
+                <h5 class="down-75">
+                    <strong>
+                        <a href="https://orcid.org/0000-0003-1904-1841" target="_blank">Thomas
+                            Kollatz</a>
+                    </strong><br />
+                    <a href="http://www.adwmainz.de/en/digitalitaet/digitale-akademie.html"
+                        target="_blank">Digital Academy</a>@<a
+                        href="http://www.adwmainz.de/en/home.html" target="_blank">Akademie der
+                        Wissenschaften und Literatur | Mainz</a>
+                    <br /><img src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter"
+                        class="twitter-icon" />
+                    <a href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter"
+                        target="_blank">@kol_t</a>
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY
+                        4.0</a>
+                </h5>
+            </div>
+            <div class="step">
+                
+                <table class="small">
+                    <tr>
+                        <th>epidat <a
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?release=beta&amp;lang=en"
+                                target="_blank">🔗</a></th>
+                        <th>BKD <a href="https://agate.academy/id/PR.768" target="_blank"
+                            >🔗</a></th>
+                    </tr>
+                    <tr>
+                        <td>research platform for Jewish epigraphy</td>
+                        <td>Buber-Korrespondenzen Digital</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure class="mfp-lightbox">
+                                <a
+                                    href="resources/img/screencapture-steinheim-institut-de-cgi-bin-epidat-2022-06-13-16_17_52.png"
+                                    target="_blank">
+                                    <img
+                                        src="resources/img/screencapture-steinheim-institut-de-cgi-bin-epidat-2022-06-13-16_17_52.png"
+                                        alt="epidat" style="width:40rem" />
+                                </a>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure class="mfp-lightbox">
+                                <a
+                                    href="resources/img/screencapture-adwmainz-de-en-projects-buber-korrespondenzen-digital-description-html-2022-06-13-16_22_07.png"
+                                    target="_blank">
+                                    <img
+                                        src="resources/img/screencapture-adwmainz-de-en-projects-buber-korrespondenzen-digital-description-html-2022-06-13-16_22_07.png"
+                                        alt="bkd" style="width:20rem" />
+                                </a>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>249 Jewish cemeteries (places)</li>
+                                <li>46,810 headstones (objects)</li>
+                                <li>1050-1952 (dates)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>~6.400 correspondence partners</li>
+                                <li>~41.000 correspondences</li>
+                                <li>1890<sup>th</sup>-1965</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2002-…</td>
+                        <td>2021-2045</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="step">
+                <h2 class="red medium">epidat – development </h2>
+                <ul class="line-height-one-five small even-left">
+                    <li>2002 set up as a database in order to manage the inventarisation of about
+                        6.000 headstones from the Ashkenazic Cemetery in <a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha&amp;release=beta&amp;lang=en"
+                            target="_blank">Hamburg-Altona</a> (1621-1871)</li>
+                    <li>data ingest by a team of 10-12 researchers (server based via webforms)</li>
+                    <li>since 2006 online</li>
+                    <li>many projects followed – the ongoing development of epidat is driven by
+                        projects and scientific cooperations </li>
+                    <li>since 2019 epidat is developed in a scientific cooperation between
+                        Steinheim-Institute | Essen and Academy of Science and Literature |
+                        Mainz</li>
+                </ul>
+                <figure class="mfp-lightbox">
+                    <a href="resources/img/chart.png">
+                        <img src="resources/img/chart.png" alt="growth of epidat" />
+                    </a>
+                </figure>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <table class="x-small line-height-one-five down-25">
+                            <tr>
+                                <th>FAIR</th>
+                                <th>Epidat Research data are ...</th>
+                            </tr>
+                            <tr>
+                                <td><strong>F</strong>indable</td>
+                                <td>provided for human readers via html5,<br />provided via a
+                                    machine readable interface</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A</strong>ccesible</td>
+                                <td>provided in the standard format <a
+                                    href="https://sourceforge.net/p/epidoc/wiki/Home/"
+                                    target=" blank">EpiDoc: TEI XML for Epigraphic Documents</a>
+                                    for machine readable, system-independent, program-independent
+                                    and structured access (and widely used by digital
+                                    epigraphers)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>I</strong>nteroperable</td>
+                                <td>mapped to authority files, controlled vocabularies and thesauri
+                                    to maintain interoperability</td>
+                            </tr>
+                            <tr>
+                                <td><strong>R</strong>e-usable</td>
+                                <td>released online under an open Creative Commons Licence <a
+                                    href="http://creativecommons.org/licences/by/4.0"
+                                    target=" blank"> cc-by</a></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>for more information see also <strong><a
+                                    href="?info=howtoharvestepidatrecords&amp;release=beta&amp;lang=en"
+                                    >How to harvest epidat records</a></strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="six columns">
+                        <figure class="mfp-lightbox even-left">
+                            <a href="resources/img/projects.png">
+                                <img src="resources/img/projects.png" alt="tobedone" />
+                            </a>
+                        </figure>
+                        <p class="x-small centered up-25">
+                            <a
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?info=lab&amp;lang=en&amp;release=beta"
+                                target="_blank">projects</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red">persons</h2>
+            </div>
+            <div class="step">
+                
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/1721_FE_0110140204.jpg">
+                                <img src="resources/img/1721_FE_0110140204.jpg"
+                                    alt="Katzenellenbogen"  />
+                            </a>
+                        </figure>
+                        <p class="x-small centered">epidat object-ID <a
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-1721&amp;lang=en&amp;release=beta"
+                                target="blank">hha-1721</a></p>
+
+                    </div>
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/hha-1721-1.png">
+                                <img src="resources/img/hha-1721-1.png"
+                                    alt="Katzenellenbogen_person" />
+                            </a>
+                        </figure>
+                        <p class="x-small centered">epidat person-ID <a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-1721-1&amp;lang=en&amp;release=beta"
+                            target="blank">hha-1721-1</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+                <div class="step">
+                    <div class="row">
+                     <div class="four columns"></div>  
+                    <div class="eight columns substep">
+                        <pre><code class="linenumbers">&lt;person xml:id="hha-1721-1" sex="1"&gt;
+    &lt;persName ref="http://d-nb.info/gnd/1053284543"&gt;
+        Jecheskel ben Awraham 
+        (Jecheskel Katzenellenbogen)
+    &lt;/persName&gt;
+    &lt;death when="1749-07-09"/&gt;
+&lt;/person&gt;
+</code>
+                        </pre>
+                        <ul class="line-height-one-five small">
+                            <li><abbr>GND</abbr>
+                                <a href="http://d-nb.info/gnd/1053284543" target="blank">Gemeinsame
+                                    Norm Datei</a> i.e. authority file of the German National
+                                Library <code>http://d-nb.info/gnd/1053284543</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/books_gb_small.png">
+                                <img src="resources/img/books_gb_small.png" alt="books">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="six columns">
+                        <h2 class="red medium down-25">books</h2>
+                        <blockquote class="small">Particularly in the 18th and 19th centuries, it
+                            happens that epitaphs list books written by the deceased. From time to
+                            time, descendants also refer to books written by an ancestor. About 50
+                            books are listed and presented in the spatiotemporal visualisation in
+                            the DARIAH-DE Geo-Browser. </blockquote>
+                        <ul class="line-height-one-five small even-left down-50">
+                            <li>dataset with 44 records<ul><li>bookTitle</li>
+                                <li>Bibliography of Hebrew Book ID</li>
+                                <li>link to epidat record</li>
+                                <li>date of headstone</li>
+                                <li>role of deceased: author or descendant of
+                                    author</li></ul></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <p class="x-small">books mentioned on headstones <a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?info=index&amp;anzeige=books&amp;lang=en&amp;release=beta#idx"
+                            target="_blank">epidat</a></p>
+                    </div>
+                    <div class="six columns">
+                        <p class="x-small right">
+                            <a
+                                href="https://geobrowser.de.dariah.eu/embed/?csv1=http://www.steinheim-institut.de/daten/epidat-bhb.csv"
+                                target="_blank">geobrowser (full view)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red">places</h2>
+            </div>
+            <div class="step">
+                <h2 class="red">events</h2>
+            </div>
+            <div class="step">
+                <h2 class="red">topics</h2>
+            </div>
+        </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- unite gallery -->
+        <script src="vendor/unitegallery/js/unitegallery.min.js"></script>
+        <script src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+        <script src="resources/js/unite.gallery.js"></script>
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();</script>
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- swiper -->
+        <script src="vendor/swiper/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30,
+                hashnav: true
+            });</script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+            var obj = impress();
+            obj.init();
+            initSlideNo(obj);</script>
+        <!--<script>
+            var videoStep = document.getElementById("video-step");
+var video = document.getElementById("video");
+videoStep.addEventListener("impress:stepenter", function() {
+    video.play();
+}, false);
+videoStep.addEventListener("impress:stepleave", function() {
+    video.pause();
+}, false);
+        </script>-->
+        <script>
+            var videos = document.getElementsByTagName("video");
+            Array.prototype.forEach.call(videos, function (video) {
+                var videoStep = video.closest(".step");
+                videoStep.addEventListener("impress:stepenter", function () {
+                    video.play();
+                },
+                false);
+                videoStep.addEventListener("impress:stepleave", function () {
+                    video.pause();
+                },
+                false);
+            });</script>
+    </body>
+</html>
