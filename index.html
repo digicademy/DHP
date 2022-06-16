@@ -63,9 +63,8 @@
                 <h5 class="down-25"
                     ><!--<a href="https://github.com/kollatzthomas/EAJS-DF-03" target="_blank"
                         >git</a>                     <br />--> slides <a
-                        href="https://digicademy.github.io/DHP"
-                        title="View the presentation online"
-                    >https://digicademy.github.io/DHP</a><br /></h5>
+                        href="https://digicademy.github.io/DHP" title="View the presentation online"
+                        >https://digicademy.github.io/DHP</a><br /></h5>
                 <h6>How to use this presentation</h6>
                 <h6 style="color:gray" class="up-25">use <kbd>spacebar</kbd> or <kbd>←</kbd> arrow
                     keys <kbd>→</kbd> to navigate between the slides</h6>
@@ -89,7 +88,6 @@
                 </h5>
             </div>
             <div class="step">
-                
                 <table class="small">
                     <tr>
                         <th>epidat <a
@@ -136,8 +134,8 @@
                         </td>
                         <td>
                             <ul>
-                                <li>~6.400 correspondence partners</li>
-                                <li>~41.000 correspondences</li>
+                                <li>~6,400 correspondence partners</li>
+                                <li>~41,000 correspondences</li>
                                 <li>1890<sup>th</sup>-1965</li>
                             </ul>
                         </td>
@@ -148,7 +146,6 @@
                     </tr>
                 </table>
             </div>
-            
             <!--<div class="step">
                 <h2 class="red medium">epidat – development </h2>
                 <ul class="line-height-one-five small even-left">
@@ -176,7 +173,7 @@
                         <table class="x-small line-height-one-five down-25">
                             <tr>
                                 <th>FAIR</th>
-                                <th>Epidat Research data are ...</th>
+                                <th>Research data should be ...</th>
                             </tr>
                             <tr>
                                 <td><strong>F</strong>indable</td>
@@ -185,12 +182,13 @@
                             </tr>
                             <tr>
                                 <td><strong>A</strong>ccesible</td>
-                                <td>provided in the standard format <a
-                                    href="https://sourceforge.net/p/epidoc/wiki/Home/"
-                                    target=" blank">EpiDoc: TEI XML for Epigraphic Documents</a>
+                                <td>provided in a standard format usually <abbr>TEI XML</abbr>,
+                                    epidat uses <a
+                                        href="https://sourceforge.net/p/epidoc/wiki/Home/"
+                                        target=" blank">EpiDoc: TEI XML for Epigraphic Documents</a>
                                     for machine readable, system-independent, program-independent
-                                    and structured access (and widely used by digital
-                                    epigraphers)</td>
+                                    and structured access (and widely used by digital epigraphers);
+                                    BKD uses a TEI subset</td>
                             </tr>
                             <tr>
                                 <td><strong>I</strong>nteroperable</td>
@@ -200,14 +198,16 @@
                             <tr>
                                 <td><strong>R</strong>e-usable</td>
                                 <td>released online under an open Creative Commons Licence <a
-                                    href="http://creativecommons.org/licences/by/4.0"
-                                    target=" blank"> cc-by</a></td>
+                                        href="http://creativecommons.org/licences/by/4.0"
+                                        target=" blank"> cc-by</a> or <a
+                                        href="http://creativecommons.org/licences/by/4.0"
+                                        target=" blank"> cc-by-sa</a></td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td>for more information see also <strong><a
-                                    href="?info=howtoharvestepidatrecords&amp;release=beta&amp;lang=en"
-                                    >How to harvest epidat records</a></strong></td>
+                                            href="?info=howtoharvestepidatrecords&amp;release=beta&amp;lang=en"
+                                            >How to harvest epidat records</a></strong></td>
                             </tr>
                         </table>
                     </div>
@@ -229,38 +229,39 @@
                 <h2 class="red">persons</h2>
             </div>-->
             <div class="step">
-                
                 <div class="row">
                     <div class="six columns">
                         <figure class="mfp-lightbox">
                             <a href="resources/img/4210_KG_0306290416.jpg">
-                                <img src="resources/img/4210_KG_0306290416.jpg"
-                                    alt="Ettlinger"  />
+                                <img src="resources/img/4210_KG_0306290416.jpg" alt="Ettlinger" />
                             </a>
                         </figure>
                         <p class="x-small centered">epidat object-ID <a
                                 href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-4210&amp;lang=en&amp;release=beta"
                                 target="blank">hha-4210</a></p>
-
                     </div>
                     <div class="six columns">
+                        <h2 class="red medium centered">headstone from epidat</h2>
                         <figure class="mfp-lightbox">
                             <a href="resources/img/hha-4210-1.png">
-                                <img src="resources/img/hha-4210-1.png"
-                                    alt="Ettlinger_person" />
+                                <img src="resources/img/hha-4210-1.png" alt="Ettlinger_person" />
                             </a>
                         </figure>
                         <p class="x-small centered">epidat person-ID <a
-                            href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-4210-1&amp;lang=en&amp;release=beta"
-                            target="blank">hha-4210-1</a></p>
-                        
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-4210-1&amp;lang=en&amp;release=beta"
+                                target="blank">hha-4210-1</a></p>
+                        <div class="mermaid">
+                            flowchart LR 
+                            headstone -->|mentions| person 
+                            headstone -->|hasID| hha-4210 
+                            person -->|hasID| hha-4210-1 
+                            hha-4210 -->|mentions| hha-4210-1 </div>
                     </div>
                 </div>
             </div>
-                
-                        <div class="step">
-                        <h2 class="red">person data in TEI XML</h2>
-                        <pre><code class="linenumbers">&lt;particDesc&gt;
+            <div class="step">
+                <h2 class="red">person data in TEI XML</h2>
+                <pre><code class="linenumbers">&lt;particDesc&gt;
  &lt;listPerson&gt;
   &lt;person xml:id="hha-4210-1" sex="1"&gt;
    &lt;persName ref="http://d-nb.info/gnd/100458068"&gt;
@@ -274,13 +275,13 @@
  &lt;/listPerson&gt;
 &lt;/particDesc&gt;
 </code></pre>
-                        <ul class="line-height-one-five">
-                            <li>reference to authority file (gnd)</li>
-                            <li>relation with other persons (spouse)</li>
-                        </ul></div>
+                <ul class="line-height-one-five">
+                    <li><hi class="highlight">4</hi> reference to authority file (gnd)</li>
+                    <li><hi class="highlight">9-10</hi>relation with other persons (spouse)<ul class="line-height-one-five x-small"><li>see <a href="https://xtriples.lod.academy/examples/dh/epidat/index.html" target="_blank">Family relations in the Hamburg-Altona Epidat gravestone corpus</a> by Torsten Schrade</li></ul></li>
+                </ul>
+            </div>
             <div class="step">
                 <div class="row">
-                    
                     <div class="twalve columns ">
                         <!--<pre><code class="linenumbers">&lt;person xml:id="hha-4210-1" sex="1"&gt;
     &lt;persName ref="http://d-nb.info/gnd/100458068"&gt;
@@ -290,52 +291,80 @@
     &lt;death when="1749-07-09"/&gt;
 &lt;/person&gt;
 </code>
-                        </pre>--><h2 class="red centered">What is TEI XML</h2>
+                        </pre>-->
+                        <h2 class="red centered">What is TEI XML</h2>
                         <!--<dl class="medium">
                     <dt class="red">TEI</dt>
                     <dd>Text Encoding Initiative</dd>
                 </dl>
--->                <blockquote class="x-small">The <span class="highlight">Text Encoding
-                                Initiative</span> (TEI) is a consortium which collectively develops and
-                            maintains a <span class="highlight">standard for the representation of texts in
-                                digital form</span>. Its chief deliverable is a set of Guidelines which
-                            specify <span class="highlight">encoding methods for machine-readable
-                                texts</span>, chiefly in the humanities, social sciences and linguistics.
-                            Since 1994, the TEI Guidelines have been widely used by libraries, museums,
-                            publishers, and individual scholars to present texts for online research,
-                            teaching, and preservation. In addition to the Guidelines themselves, the
-                            Consortium provides a variety of resources and training events for learning TEI,
-                            information on projects using the TEI, a bibliography of TEI-related
-                            publications, and software developed for or adapted to the TEI.</blockquote>
+-->
+                        <blockquote class="x-small">The <span class="highlight">Text Encoding
+                                Initiative</span> (TEI) is a consortium which collectively develops
+                            and maintains a <span class="highlight">standard for the representation
+                                of texts in digital form</span>. Its chief deliverable is a set of
+                            Guidelines which specify <span class="highlight">encoding methods for
+                                machine-readable texts</span>, chiefly in the humanities, social
+                            sciences and linguistics. Since 1994, the TEI Guidelines have been
+                            widely used by libraries, museums, publishers, and individual scholars
+                            to present texts for online research, teaching, and preservation. In
+                            addition to the Guidelines themselves, the Consortium provides a variety
+                            of resources and training events for learning TEI, information on
+                            projects using the TEI, a bibliography of TEI-related publications, and
+                            software developed for or adapted to the TEI.</blockquote>
                         <p class="x-small right">
                             <a href="http://www.tei-c.org" target="_blank">tei-c.org</a>
-                        </p></div>
-                </div>
-            </div>                    
-                        <div class="step">
-                            <h2 class="red">authority files</h2>
-                            <h3>Jakob Ettlinger has GND-ID <code>100458068</code>… </h3>
-                        <ul class="line-height-one-five small">
-                            <li><a href="http://d-nb.info/gnd/100458068" target="blank">Gemeinsame
-                                Norm Datei</a> <abbr>(GND)</abbr>
-                                i.e. authority file of the German National
-                                Library <code>http://d-nb.info/gnd/100458068</code></li>
-                            <li><abbr><a href="https://lobid.org/gnd/100458068" target="blank">Lobid</a></abbr>  provides Linked Open Data (LOD) services for libraries, consisting of user interfaces (UIs) and application programming interfaces (APIs). <code>https://lobid.org/gnd/100458068</code></li>
-                            <li><abbr><a href="https://jewish-history-online.net/person/gnd/100458068" target="_blank">Key Documents of German-Jewish History</a></abbr> persons <code>https://jewish-history-online.net/person/gnd/100458068</code></li>
-
-                            <li><abbr><a href="http://steinheim-institut.de:50580/cgi-bin/bhr?gnd=100458068" target="_blank">BHR</a> Biographisches Portal der Rabbiner</abbr> <code>http://steinheim-institut.de:50580/cgi-bin/bhr?gnd=100458068</code></li>   
-                            <li><abbr><a href="https://data.judaicalink.org/data/html/gnd/100458068" target="blank">Judaica Link</a></abbr> – linking reference works of the Jewish culture and history <code>https://data.judaicalink.org/data/html/gnd/100458068</code></li></ul>
+                        </p>
                     </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red">What are authority files</h2>
+                <blockquote class="small">databases containing <q>a single, distinct spelling of a
+                        name (heading) or a numeric identifier for each topic</q>, in order to
+                    collocate and disambiguate </blockquote>
+                <p class="x-small right">cf. Wikipedia (en) art. <a
+                        href="https://en.wikipedia.org/wiki/Authority_control" target="blank"
+                        >authority control</a></p>
+                <div class="mermaid up-50"> 
+                    flowchart LR 
+                    hha-4210-1 -->|sameAs| 100458068 
+                </div>
+                <h3 class="red">Jaakow|Jakob|Jacob Ettlinger identified in … </h3>
+                <ul class="line-height-one-five x-small">
+                    <li><a href="http://d-nb.info/gnd/100458068" target="blank">Gemeinsame Norm
+                            Datei</a>
+                        <abbr>(GND)</abbr> i.e. authority file of the German National Library
+                            <code>http://d-nb.info/gnd/100458068</code></li>
+                    <li><abbr><a href="https://lobid.org/gnd/100458068" target="blank"
+                            >Lobid</a></abbr> provides Linked Open Data (LOD) services for
+                        libraries, consisting of user interfaces (UIs) and application programming
+                        interfaces (APIs). <code>https://lobid.org/gnd/100458068</code></li>
+                    <li><abbr><a href="https://jewish-history-online.net/person/gnd/100458068"
+                                target="_blank">Key Documents of German-Jewish History</a></abbr>
+                        persons
+                        <code>https://jewish-history-online.net/person/gnd/100458068</code></li>
+                    <li>
+                        <abbr><a href="http://steinheim-institut.de:50580/cgi-bin/bhr?gnd=100458068"
+                                target="_blank">BHR</a> Biographisches Portal der Rabbiner</abbr>
+                        <code>http://steinheim-institut.de:50580/cgi-bin/bhr?gnd=100458068</code>
+                    </li>
+                    <li><abbr><a href="https://data.judaicalink.org/data/html/gnd/100458068"
+                                target="blank">Judaica Link</a></abbr> – linking reference works of
+                        the Jewish culture and history
+                            <code>https://data.judaicalink.org/data/html/gnd/100458068</code></li>
+                    <li>…</li>
+                </ul>
+            </div>
             <div class="step">
                 <h2 class="red">problem(s)</h2>
-                <p>epidat has 49,737 persons but only 87 with GND-ID …</p>
+                <p>epidat has 49,737 persons but only 87 have a GND-identifier …</p>
             </div>
-                            <div class="step">
+            <div class="step">
                 <div class="row">
                     <div class="six columns">
                         <figure class="mfp-lightbox">
                             <a href="resources/img/books_gb_small.png">
-                                <img src="resources/img/books_gb_small.png" alt="books"/>
+                                <img src="resources/img/books_gb_small.png" alt="books" />
                             </a>
                         </figure>
                     </div>
@@ -349,19 +378,19 @@
                         <h4 class="medium red down-25">Linking place, time, book, person</h4>
                         <ul class="line-height-one-five small even-left">
                             <li>dataset with 44 records<ul><li>bookTitle</li>
-                                <li>Bibliography of Hebrew Book ID</li>
-                                <li>link to epidat record</li>
-                                <li>date of headstone</li>
-                                <li>role of deceased: author or descendant of
-                                    author</li></ul></li>
+                                    <li>Bibliography of Hebrew Book ID</li>
+                                    <li>link to epidat record</li>
+                                    <li>date of headstone</li>
+                                    <li>role of deceased: author or descendant of
+                                author</li></ul></li>
                         </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="six columns">
                         <p class="x-small">books mentioned on headstones <a
-                            href="http://www.steinheim-institut.de/cgi-bin/epidat?info=index&amp;anzeige=books&amp;lang=en&amp;release=beta#idx"
-                            target="_blank">epidat</a></p>
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?info=index&amp;anzeige=books&amp;lang=en&amp;release=beta#idx"
+                                target="_blank">epidat</a></p>
                     </div>
                     <div class="six columns">
                         <p class="x-small right">
@@ -373,11 +402,226 @@
                 </div>
             </div>
             <div class="step">
-                <div class="mermaid">
-                    graph LR
-                    A[Buber] -->|invites| B[Herzl]
+                <h2 class="red">Buber-Correspondences</h2>
+                <div class="row">
+                    <div class="six columns">
+                                               <figure class="mfp-lightbox up-10 centered">
+                            <a href="resources/img/herzl_buber_env.png">
+                                <img src="resources/img/herzl_buber_env.png" alt="envelope"
+                                    style="width:20rem" />
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="six columns">
+                        
+                        <table class="x-small line-height-one down-25">
+                            <tr>
+                                
+                                <td>sender</td>
+                                <td>Martin Buber</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>receiver</td>
+                                <td>Theodor Herzl</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>place (sent)</td>
+                                <td>Wien</td>
+                            </tr>
+                           <tr>
+                                <td>place (received)</td>
+                                <td>Wien</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>date (sent)</td>
+                                <td>May 21, 1903</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="step">
+                <h2 class="red"><code>correspDesc</code>
+                </h2>                <div class="row">
+                    <div class="twalve columns">
+                        
+                        <pre><code class="linenumbers xml">&lt;correspDesc&gt;
+ &lt;correspAction type="sent"&gt;
+  &lt;persName  key="P.0000001"
+             ref="http://d-nb.info/gnd/118516477"&gt;Buber, Martin&lt;/persName&gt;
+  &lt;placeName key="O.0000007" 
+             ref="https://www.geonames.org/2761369"&gt;Wien&lt;/placeName&gt;
+  &lt;date when="1903-05-21"/&gt;&lt;/correspAction&gt;
+ &lt;correspAction type="received"&gt;
+  &lt;persName  key="P.0002131" 
+             ref="http://d-nb.info/gnd/118550241"&gt;Herzl, Theodor&lt;/persName&gt;
+  &lt;placeName key="O.0000007" 
+             ref="https://www.geonames.org/2761369"
+             evidence="external"&gt;Wien&lt;/placeName&gt;&lt;/correspAction&gt;
+&lt;/correspDesc&gt;
+</code>
+                        
+                     </pre>
+                    </div>
                 </div>
             </div>
+            <div class="step">
+                <h2 class="red"><code>text</code></h2>
+                <pre><code>&lt;div type="content" xml:lang="de"&gt; 
+&lt;pb n="1"/&gt;
+ &lt;opener&gt; 
+    &lt;dateline&gt;Wien &lt;date when="1903-05-21"&gt;21.V.03&lt;/date&gt;.&lt;/dateline&gt;
+    &lt;salute&gt;Hochgeehrter Herr Doctor ?&lt;/salute&gt;
+ &lt;/opener&gt;
+ &lt;p&gt;Gestatten Sie mir, in Erwiderung Ihres werten 
+ &lt;lb/&gt;Schreibens von &lt;date when="1903-05-20"&gt;gestern&lt;/date&gt; an Sie die Frage zu richten, ob Ihrer Ansicht nach 
+ &lt;lb/&gt;die Form von &lt;persName key="P.0003758"&gt;Nordaus&lt;/persName&gt; 
+    &lt;name key="W.0000028.01" type="work"&gt;Artikel&lt;/name&gt; und die Art seiner Verbreitung geeignet 
+ &lt;lb/&gt;waren, auf die Entwickelung der Bewegung günstig einzuwirken. Beide 
+ &lt;lb/&gt;scheinen mir Ihrer eigenen Art &lt;gap reason="deleted" unit="line" quantity="0.5"/&gt; 
+ &lt;lb/&gt;&lt;gap reason="deleted" unit="line" quantity="0.25" /&gt;so fremd zu sein, dass ich unmöglich annehmen kann, &lt;lb/&gt;sie hätten Ihre volle &lt;add place="above"&gt;und innerste &lt;/add&gt;Billigung gefunden. Unsere &lt;name key="W.0000021.01" type="work"&gt;Stellungnahme&lt;/name&gt; ? &lt;add place="above"&gt;die &lt;/add&gt;nicht&lt;add place="inline"&gt;s&lt;/add&gt; &lt;lb/&gt;&lt;subst&gt;&lt;del rend="strikethrough"&gt;die&lt;/del&gt;&lt;add place="above"&gt;mit der&lt;/add&gt;&lt;/subst&gt; gewisser gegnerischer Elemente &lt;add place="above"&gt;zu tun hat &lt;/add&gt;? war die unseres Erachtens notwendige 
+ &lt;lb/&gt;Reaktion. Eine wirklich starke &lt;orgName key="K.0000001"&gt;Partei&lt;/orgName&gt; wird es sich zum Ruhme anrechnen, &lt;lb/&gt;dass sie für die Meinung jedes Parteimitglieds ? &lt;del rend="strikethrough"&gt;für &lt;/del&gt;jede in correcter Form &lt;lb/&gt;ausgedrückte Meinung ? Platz hat. &lt;g/&gt;So die deutsche Sozialdemokratie im &lt;lb/&gt;Falle &lt;persName key="P.0000444"&gt;Bernstein&lt;/persName&gt;, während für die französische das Versagen in einem ähnlichen &lt;lb/&gt;Falle der Anfang vom Ende sein dürfte.&lt;g/&gt; &lt;del rend="strikethrough"&gt;Nur &lt;/del&gt;&lt;subst&gt;&lt;del rend="overstrike"&gt;e&lt;/del&gt;&lt;add&gt;E&lt;/add&gt;&lt;/subst&gt;ine gerecht und freiheitlich &lt;lb/&gt;geleitete Bewegung wird in der Stunde der grossen Parole jeden Mann &lt;lb/&gt;auf seinem Posten und alle Meinungen zu Einer Tat verschmolzen finden.&lt;/p&gt;
+ &lt;closer&gt; 
+&lt;salute&gt;Mit Zionsgruss und dem Ausdrucke der vorzüglichsten Hochachtung&lt;/salute&gt; 
+&lt;lb/&gt;&lt;signed&gt;Martin Buber&lt;/signed&gt;
+ &lt;/closer&gt;
+&lt;/div&gt;
+</code></pre>
+            </div>
+            <div class="step">
+                <h2 class="red"><code>abstract</code></h2>
+                <pre><code class="linenumbers">&lt;abstract&gt;
+ &lt;list type="content"&gt;
+    &lt;item&gt;Buber verlangt von Herzl eine Stellungnahme 
+    zu Nordaus Verhalten in der Altneuland-Kontroverse und 
+    betont die Notwendigkeit der Meinungsfreiheit innerhalb 
+    der zionistischen Bewegung.&lt;/item&gt;
+ &lt;/list&gt;
+</code></pre>
+            </div>
+            <div class="step">
+                <h2 class="red">persons | organisations mentioned</h2>
+                <pre><code class="linenumbers">&lt;listPerson&gt;
+ &lt;person&gt;
+    &lt;persName key="P.0000444"&gt;Bernstein, Eduard&lt;/persName&gt;
+ &lt;/person&gt;
+ &lt;person&gt;
+    &lt;persName key="P.0003758"&gt;Nordau, Max&lt;/persName&gt;
+ &lt;/person&gt;
+&lt;/listPerson&gt;
+</code></pre>
+            
+                <pre><code class="linenumbers">&lt;listOrg&gt;
+ &lt;org&gt;
+    &lt;orgName key="K.0000001"&gt;Zionistische Partei&lt;/orgName&gt;
+ &lt;/org&gt;
+&lt;/listOrg&gt;
+</code></pre>
+            </div>
+            <div class="step">
+                <h2 class="red">works mentioned</h2>
+                <pre><code class="linenumbers">&lt;list type="works"&gt;
+ &lt;item&gt;
+    &lt;name key="W.0000028.01" type="work"&gt;Nordau, Max: Achad-Haam über Altneuland
+    &lt;/name&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+    &lt;name key="W.0000021.01" type="work"&gt;Buber, Martin/Feiwel, Berthold
+        /Weizmann, Chaim:
+        גלוי דעת [Protesterklärung gegen Nordaus Artikel]
+   &lt;/name&gt;
+ &lt;/item&gt;
+&lt;/list&gt;
+</code>
+           </pre>
+            </div>
+            <div class="step">
+     <h2 class="red">keywords attributed to content</h2>           
+                <pre><code class="linenumbers">&lt;list type="keywords"&gt;
+ &lt;item&gt;
+    &lt;name key="S.0000014" type="keyword"&gt;Altneuland-Kontroverse&lt;/name&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+    &lt;name key="S.0000001" type="keyword"&gt;Zionistische Bewegung&lt;/name&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+    &lt;name key="S.0000013" type="keyword"&gt;Konflikt&lt;/name&gt;
+ &lt;/item&gt;
+ &lt;item&gt;
+    &lt;name key="S.0000016" type="keyword"&gt;Sozialdemokratische Bewegung&lt;/name&gt;
+ &lt;/item&gt;
+&lt;/list&gt;
+</code></pre>
+            </div>
+            
+            <div class="step">
+                <h2 class="red">relations between entities</h2>
+                <pre><code class="linenumbers"> &lt;listRelation&gt; 
+     &lt;relation active="P.0000001" name="refersTo"    passive="P.0000444"/&gt;
+     &lt;relation active="P.0000001" name="attacks"     passive="K.0000001"/&gt;
+     &lt;relation active="P.0000001" name="opponentOf"  passive="P.0002131"/&gt;
+     &lt;relation active="P.0000001" name="opponentOf"  passive="P.0003758"/&gt;
+ &lt;/listRelation&gt;
+&lt;/abstract&gt;
+</code></pre>
+            </div>
+            
+            <div class="step">
+                <div class="row">
+                    <div class="twalve columns">
+                        <h2 class="red">levels of editions in BKD</h2>
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>correspDesc</th>
+                                <th>abstract</th>
+                                <th>text</th>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>C</td>
+                                <td>✅</td>
+                                <td></td>
+                                <td></td>
+                            </tr>                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red">analyse of relations of correspondence</h2>
+                <div class="row"><div class="twalve columns"><figure class="mfp-lightbox"><a href="resources/img/Relation_Herzl_Buber.png"><img src="resources/img/Relation_Herzl_Buber.png" alt="Buber-Herzl-relation"/></a></figure></div>
+                    <p class="x-small right">source: internship (Praxisprojekt) on relational data <a href="https://www.adwmainz.de/mitarbeiterinnen/profil/linnaea-soehn.html" target="blank">Linnaea Söhn</a> </p></div>
+                
+            </div>
+            <div class="step">
+                <h2 class="red">analytical approach to correspondences</h2>
+                <div class="row"><div class="six columns"><figure class="mfp-lightbox even-left"><a href="resources/img/neo4j.png"><img src="resources/img/neo4j.png" alt="neo4j" style="width:40rem"/></a></figure><p class="x-small">Visualisation generated with the help of <a href="https://www.adwmainz.de/mitarbeiterinnen/profil/prof-dr-andreas-kuczera.html" target="blank">Andreas Kuczera</a></p></div><div class="six columns">
+                    <h3>mission statement</h3>
+                    <ul class="line-height-one-five">
+                        <li>focus more on relation(s) between entities …</li>
+                        <li>… full-text (transcription of text) is (probably) less important than structured capture of content</li>
+                    </ul>
+                </div></div>
+                
+            </div>
+
+            
             <!--<div class="step">
                 <h2 class="red">places</h2>
             </div>
@@ -423,8 +667,10 @@
         <!-- mermaid -->
         <!--<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>-->
         <script src="resources/js/mermaid.min.js"></script>
-        <script>mermaid.initialize({startOnLoad:true});
-</script>
+        <script>
+            mermaid.initialize({
+                startOnLoad: true
+            });</script>
         <!--<script>
             var videoStep = document.getElementById("video-step");
 var video = document.getElementById("video");
