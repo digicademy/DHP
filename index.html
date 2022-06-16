@@ -63,9 +63,9 @@
                 <h5 class="down-25"
                     ><!--<a href="https://github.com/kollatzthomas/EAJS-DF-03" target="_blank"
                         >git</a>                     <br />--> slides <a
-                        href="https://kollatzthomas.github.io/DHP"
+                        href="https://digicademy.github.io/DHP"
                         title="View the presentation online"
-                    >https://kollatzthomas.github.io/DHP</a><br /></h5>
+                    >https://digicademy.github.io/DHP</a><br /></h5>
                 <h6>How to use this presentation</h6>
                 <h6 style="color:gray" class="up-25">use <kbd>spacebar</kbd> or <kbd>←</kbd> arrow
                     keys <kbd>→</kbd> to navigate between the slides</h6>
@@ -149,7 +149,7 @@
                 </table>
             </div>
             
-            <div class="step">
+            <!--<div class="step">
                 <h2 class="red medium">epidat – development </h2>
                 <ul class="line-height-one-five small even-left">
                     <li>2002 set up as a database in order to manage the inventarisation of about
@@ -169,7 +169,7 @@
                         <img src="resources/img/chart.png" alt="growth of epidat" />
                     </a>
                 </figure>
-            </div>
+            </div>-->
             <div class="step">
                 <div class="row">
                     <div class="six columns">
@@ -225,78 +225,129 @@
                     </div>
                 </div>
             </div>
-            <div class="step">
+            <!--<div class="step">
                 <h2 class="red">persons</h2>
-            </div>
+            </div>-->
             <div class="step">
                 
                 <div class="row">
                     <div class="six columns">
                         <figure class="mfp-lightbox">
-                            <a href="resources/img/1721_FE_0110140204.jpg">
-                                <img src="resources/img/1721_FE_0110140204.jpg"
-                                    alt="Katzenellenbogen"  />
+                            <a href="resources/img/4210_KG_0306290416.jpg">
+                                <img src="resources/img/4210_KG_0306290416.jpg"
+                                    alt="Ettlinger"  />
                             </a>
                         </figure>
                         <p class="x-small centered">epidat object-ID <a
-                                href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-1721&amp;lang=en&amp;release=beta"
-                                target="blank">hha-1721</a></p>
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-4210&amp;lang=en&amp;release=beta"
+                                target="blank">hha-4210</a></p>
 
                     </div>
                     <div class="six columns">
                         <figure class="mfp-lightbox">
-                            <a href="resources/img/hha-1721-1.png">
-                                <img src="resources/img/hha-1721-1.png"
-                                    alt="Katzenellenbogen_person" />
+                            <a href="resources/img/hha-4210-1.png">
+                                <img src="resources/img/hha-4210-1.png"
+                                    alt="Ettlinger_person" />
                             </a>
                         </figure>
                         <p class="x-small centered">epidat person-ID <a
-                            href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-1721-1&amp;lang=en&amp;release=beta"
-                            target="blank">hha-1721-1</a></p>
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-4210-1&amp;lang=en&amp;release=beta"
+                            target="blank">hha-4210-1</a></p>
                         
                     </div>
                 </div>
             </div>
-                <div class="step">
-                    <div class="row">
-                     <div class="four columns"></div>  
-                    <div class="eight columns substep">
-                        <pre><code class="linenumbers">&lt;person xml:id="hha-1721-1" sex="1"&gt;
-    &lt;persName ref="http://d-nb.info/gnd/1053284543"&gt;
+                
+                        <div class="step">
+                        <h2 class="red">person data in TEI XML</h2>
+                        <pre><code class="linenumbers">&lt;particDesc&gt;
+ &lt;listPerson&gt;
+  &lt;person xml:id="hha-4210-1" sex="1"&gt;
+   &lt;persName ref="http://d-nb.info/gnd/100458068"&gt;
+    Jaakow Jokew ben Aharon Ettlinger&lt;/persName&gt;
+   &lt;death when="1871-12-07"/&gt;
+  &lt;/person&gt;
+  &lt;listRelation&gt;
+   &lt;relation name="spouse" 
+             mutual="#hha-4205-1 #hha-4210-1"/&gt;
+  &lt;/listRelation&gt;
+ &lt;/listPerson&gt;
+&lt;/particDesc&gt;
+</code></pre>
+                        <ul class="line-height-one-five">
+                            <li>reference to authority file (gnd)</li>
+                            <li>relation with other persons (spouse)</li>
+                        </ul></div>
+            <div class="step">
+                <div class="row">
+                    
+                    <div class="twalve columns ">
+                        <!--<pre><code class="linenumbers">&lt;person xml:id="hha-4210-1" sex="1"&gt;
+    &lt;persName ref="http://d-nb.info/gnd/100458068"&gt;
         Jecheskel ben Awraham 
-        (Jecheskel Katzenellenbogen)
+        (Jecheskel Ettlinger)
     &lt;/persName&gt;
     &lt;death when="1749-07-09"/&gt;
 &lt;/person&gt;
 </code>
-                        </pre>
-                        
-                        <ul class="line-height-one-five small">
-                            <li>Jecheskel ben Awraham Katzenellenbogen in <abbr>GND</abbr>
-                                <a href="http://d-nb.info/gnd/1053284543" target="blank">Gemeinsame
-                                    Norm Datei</a> i.e. authority file of the German National
-                                Library <code>http://d-nb.info/gnd/1053284543</code></li>
-                        </ul>
-                    </div>
+                        </pre>--><h2 class="red centered">What is TEI XML</h2>
+                        <!--<dl class="medium">
+                    <dt class="red">TEI</dt>
+                    <dd>Text Encoding Initiative</dd>
+                </dl>
+-->                <blockquote class="x-small">The <span class="highlight">Text Encoding
+                                Initiative</span> (TEI) is a consortium which collectively develops and
+                            maintains a <span class="highlight">standard for the representation of texts in
+                                digital form</span>. Its chief deliverable is a set of Guidelines which
+                            specify <span class="highlight">encoding methods for machine-readable
+                                texts</span>, chiefly in the humanities, social sciences and linguistics.
+                            Since 1994, the TEI Guidelines have been widely used by libraries, museums,
+                            publishers, and individual scholars to present texts for online research,
+                            teaching, and preservation. In addition to the Guidelines themselves, the
+                            Consortium provides a variety of resources and training events for learning TEI,
+                            information on projects using the TEI, a bibliography of TEI-related
+                            publications, and software developed for or adapted to the TEI.</blockquote>
+                        <p class="x-small right">
+                            <a href="http://www.tei-c.org" target="_blank">tei-c.org</a>
+                        </p></div>
                 </div>
-            </div>
+            </div>                    
+                        <div class="step">
+                            <h2 class="red">authority files</h2>
+                            <h3>Jakob Ettlinger has GND-ID <code>100458068</code>… </h3>
+                        <ul class="line-height-one-five small">
+                            <li><a href="http://d-nb.info/gnd/100458068" target="blank">Gemeinsame
+                                Norm Datei</a> <abbr>(GND)</abbr>
+                                i.e. authority file of the German National
+                                Library <code>http://d-nb.info/gnd/100458068</code></li>
+                            <li><abbr><a href="https://lobid.org/gnd/100458068" target="blank">Lobid</a></abbr>  provides Linked Open Data (LOD) services for libraries, consisting of user interfaces (UIs) and application programming interfaces (APIs). <code>https://lobid.org/gnd/100458068</code></li>
+                            <li><abbr><a href="https://jewish-history-online.net/person/gnd/100458068" target="_blank">Key Documents of German-Jewish History</a></abbr> persons <code>https://jewish-history-online.net/person/gnd/100458068</code></li>
+
+                            <li><abbr><a href="http://steinheim-institut.de:50580/cgi-bin/bhr?gnd=100458068" target="_blank">BHR</a> Biographisches Portal der Rabbiner</abbr> <code>http://steinheim-institut.de:50580/cgi-bin/bhr?gnd=100458068</code></li>   
+                            <li><abbr><a href="https://data.judaicalink.org/data/html/gnd/100458068" target="blank">Judaica Link</a></abbr> – linking reference works of the Jewish culture and history <code>https://data.judaicalink.org/data/html/gnd/100458068</code></li></ul>
+                    </div>
             <div class="step">
+                <h2 class="red">problem(s)</h2>
+                <p>epidat has 49,737 persons but only 87 with GND-ID …</p>
+            </div>
+                            <div class="step">
                 <div class="row">
                     <div class="six columns">
                         <figure class="mfp-lightbox">
                             <a href="resources/img/books_gb_small.png">
-                                <img src="resources/img/books_gb_small.png" alt="books">
+                                <img src="resources/img/books_gb_small.png" alt="books"/>
                             </a>
                         </figure>
                     </div>
                     <div class="six columns">
-                        <h2 class="red medium down-25">books</h2>
+                        <h2 class="red medium down-25">Ettlingers books</h2>
                         <blockquote class="small">Particularly in the 18th and 19th centuries, it
                             happens that epitaphs list books written by the deceased. From time to
                             time, descendants also refer to books written by an ancestor. About 50
                             books are listed and presented in the spatiotemporal visualisation in
                             the DARIAH-DE Geo-Browser. </blockquote>
-                        <ul class="line-height-one-five small even-left down-50">
+                        <h4 class="medium red down-25">Linking place, time, book, person</h4>
+                        <ul class="line-height-one-five small even-left">
                             <li>dataset with 44 records<ul><li>bookTitle</li>
                                 <li>Bibliography of Hebrew Book ID</li>
                                 <li>link to epidat record</li>
@@ -321,7 +372,7 @@
                     </div>
                 </div>
             </div>
-            <div class="step">
+            <!--<div class="step">
                 <h2 class="red">places</h2>
             </div>
             <div class="step">
@@ -329,7 +380,7 @@
             </div>
             <div class="step">
                 <h2 class="red">topics</h2>
-            </div>
+            </div>-->
         </div>
         <!-- jquery -->
         <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
