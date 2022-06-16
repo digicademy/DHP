@@ -372,6 +372,12 @@
                     </div>
                 </div>
             </div>
+            <div class="step">
+                <div class="mermaid">
+                    graph LR
+                    A[Buber] -->|invites| B[Herzl]
+                </div>
+            </div>
             <!--<div class="step">
                 <h2 class="red">places</h2>
             </div>
@@ -414,6 +420,11 @@
             var obj = impress();
             obj.init();
             initSlideNo(obj);</script>
+        <!-- mermaid -->
+        <!--<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>-->
+        <script src="resources/js/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});
+</script>
         <!--<script>
             var videoStep = document.getElementById("video-step");
 var video = document.getElementById("video");
