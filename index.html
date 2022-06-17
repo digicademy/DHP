@@ -252,10 +252,15 @@
                                 target="blank">hha-4210-1</a></p>
                         <div class="mermaid down-50">
                             flowchart LR 
-                            headstone -->|mentions| person 
-                            headstone -->|hasID| hha-4210 
-                            person -->|hasID| hha-4210-1 
-                            hha-4210 -->|mentions| hha-4210-1 </div>
+                            A(   headstone  &#160;&#160; ):::entity -->|mentions| B(person) 
+                            A -->|hasID| C(   hha-4210  ) 
+                            B:::entity -->|hasID| D(   hha-4210-1  ) 
+                            C:::id -->|mentions| D:::id
+                            click C "http://www.steinheim-institut.de/cgi-bin/epidat?lang=en&amp;release=beta&amp;id=hha-4210" _blank
+                            click D "http://www.steinheim-institut.de/cgi-bin/epidat?lang=en&amp;release=beta&amp;id=hha-4210-1" _blank
+                            classDef entity fill:#FFA07A;
+                            classDef id fill:#F4A460;
+                        </div>
                     </div>
                 </div>
             </div>
@@ -327,7 +332,8 @@
                         >authority control</a></p>
                 <div class="mermaid up-50"> 
                     flowchart LR 
-                    hha-4210-1 -->|sameAs| 100458068 
+                    A(hha-4210-1 ):::id &lt;--&gt;| __sameAs__ | B(100458068 &#65279; ):::id
+                    classDef id fill:#F4A460;
                 </div>
                 <h3 class="red">Jaakow|Jakob|Jacob Ettlinger identified in … </h3>
                 <ul class="line-height-one-five x-small">
